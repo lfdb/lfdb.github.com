@@ -7,6 +7,22 @@
 </head>
 <body>
 
+<h1 id="toc_1">如何上传到Github</h1>
+<ul>
+<li>
+注册一个主用户yache，安装好git并配置好ssh key，随时可以链接上
+
+<li>
+注册子帐户，如yache@qq.com 和 qqz186@gmail.com 作为子帐户
+
+<li>
+在子帐户里面新建一个Username.github.com repo，然后添加共同协作人yache（主帐户）
+
+<li>
+接着在git bash里面按照如下步骤输入：
+
+</ul>
+
 <pre Global setup:>
 
  Set up git
@@ -14,6 +30,7 @@
   git config --global user.email yache@qq.com
   Add your public key
 
+ 其实这一步可以省掉
 
 Next steps:
 
@@ -26,6 +43,7 @@ Next steps:
   git remote add origin git@github.com:lfdb/lfdb.github.com.git
   git push -u origin master
 
+针对最后两句，把origin 改成对应的Username，即可完成上传
 
 Existing Git Repo?
 
@@ -43,6 +61,11 @@ When you're done:
 
   Continue
 </pre>
+<ul>
+<li>
+这样就完成了一个子网站的上传。然后在子目录下更新CNAME文件，指向固定的域名即实现域名绑定。
+
+</ul>
 
 </body>
 </html>
