@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>how-to-transfer-your-blogs-to-github</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<pre Global setup:>
+
+ Set up git
+  git config --global user.name "Your Name"
+  git config --global user.email yache@qq.com
+  Add your public key
+
+
+Next steps:
+
+  mkdir lfdb.github.com
+  cd lfdb.github.com
+  git init
+  touch README
+  git add README
+  git commit -m 'first commit'
+  git remote add origin git@github.com:lfdb/lfdb.github.com.git
+  git push -u origin master
+
+
+Existing Git Repo?
+
+  cd existing_git_repo
+  git remote add origin git@github.com:lfdb/lfdb.github.com.git
+  git push -u origin master
+
+
+Importing a Subversion Repo?
+
+  Click here
+
+
+When you're done:
+
+  Continue
+</pre>
+
+</body>
+</html>
